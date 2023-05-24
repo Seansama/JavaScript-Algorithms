@@ -31,6 +31,9 @@ console.log(factorial(13))
 
 //Prime number
 
-function isPrime(){
+function isPrime(n){
   
 }
+console.log(isPrime(1))
+console.log(isPrime(5))
+console.log(isPrime(4))
