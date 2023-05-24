@@ -47,3 +47,33 @@ console.log(isPrime(5))
 console.log(isPrime(4))
 //Algorithm is linear time O(n)
 // Single loops exibit linear time complexity(time increases as input size increases)
+
+//Power of two algorithm
+
+function powerOfTwo(n){
+  if(n < 1){
+    return false
+  }
+  while(n > 1){
+    if(n % 2 !== 0){
+      return false
+    }
+   n = n/2
+  }
+  return true
+}
+console.log(powerOfTwo(4))
+console.log(powerOfTwo(9))
+console.log(powerOfTwo(8))
+
+//Algorithm is Logarithmic time O(log n)
+//Input is halfed at every iteration
+
+//Optimal power of two
+
+function isPowerOfTwoBitwise(n){
+  if(n < 1){
+    return false
+  }
+  return (n & (n-1)) === 0
+}
